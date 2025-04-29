@@ -1,12 +1,10 @@
-from .app import RecLLMApp
 from fastmcp import FastMCP
 
 
 
 class RecLLMMCP:
-  def __init__(self):
-    self.app = RecLLMApp()
-    self.mcp = FastMCP.from_fastapi(self.app)
+  def __init__(self, app):
+    self.mcp = FastMCP.from_fastapi(app)
     
   def run(self):
     self.mcp.run(transport='sse')

@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .db import BasicDatabase
+from recllm_core.db import BasicDatabase
 
 
 

@@ -8,6 +8,8 @@ dependencies = [
     "fastapi>=0.115.12",
     "fastmcp>=2.2.5",
     "mcp[cli]>=1.6.0",
-    "pgvector>=0.4.1",
-    "sqlalchemy>=2.0.40",
+    "recllm-core",
 ]
+
+[tool.uv.sources]
+recllm-core = { git = "ssh://git@github.com/recllm-org/core.git" }

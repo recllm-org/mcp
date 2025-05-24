@@ -1,6 +1,5 @@
 from fastapi import status, Request
 from fastapi.responses import JSONResponse
-from .auth import get_user
 from starlette.middleware.base import BaseHTTPMiddleware
 from uuid import UUID
 
